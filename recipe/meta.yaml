@@ -1,17 +1,17 @@
 {% set name = "etelemetry" %}
-{% set version = "v0.1.2" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/mgxd/{{ name }}-client/archive/{{ version }}.tar.gz
+  url: https://github.com/mgxd/{{ name }}-client/archive/v{{ version }}.tar.gz
   sha256: 7d139f1083a2e75973dacbe8551c766dc695f913b1184c19fdfcb52b3e236117
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
