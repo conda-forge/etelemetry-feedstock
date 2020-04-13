@@ -1,5 +1,5 @@
 {% set name = "etelemetry" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sensein/{{ name }}-client/archive/v{{ version }}.tar.gz
-  sha256: 7d139f1083a2e75973dacbe8551c766dc695f913b1184c19fdfcb52b3e236117
+  sha256: d3fa34baa3da682508ece11c01299020e256b86323635a1dd6c55c8be2c47429
 
 build:
   noarch: python
