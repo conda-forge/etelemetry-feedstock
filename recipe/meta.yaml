@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/mgxd/{{ name }}-client/archive/v{{ version }}.tar.gz
+  url: https://github.com/sensein/{{ name }}-client/archive/v{{ version }}.tar.gz
   sha256: 7d139f1083a2e75973dacbe8551c766dc695f913b1184c19fdfcb52b3e236117
 
 build:
@@ -27,7 +27,7 @@ test:
     - etelemetry
 
 about:
-  home: https://github.com/mgxd/etelemetry-client
+  home: https://github.com/sensein/etelemetry-client
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
@@ -35,10 +35,11 @@ about:
   description: |
     A lightweight python client to communicate with the etelemetry server
     to provide version checks for Python developers.
-  dev_url: https://github.com/mgxd/etelemetry-client
+  dev_url: https://github.com/sensein/etelemetry-client
 
 extra:
   recipe-maintainers:
     - mgxd
     - satra
     - effigies
+    - yarikoptic
