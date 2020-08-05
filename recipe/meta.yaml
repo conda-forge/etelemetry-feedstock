@@ -1,5 +1,5 @@
 {% set name = "etelemetry" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/sensein/{{ name }}-client/archive/v{{ version }}.tar.gz
-  sha256: b1fe7e081bc5d3273c74ced6b8a763248889d0a4e7c0cd7796cd2e5a7f1cd002
+  sha256: bfec416552d248ad0f50b90ba5ff015e825ad70e4a87f7a06cc7da6d19152897
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'A lightweight python client to communicate with the etelemetry server'
+  summary: A lightweight python client to communicate with the etelemetry server
   description: |
     A lightweight python client to communicate with the etelemetry server
     to provide version checks for Python developers.
